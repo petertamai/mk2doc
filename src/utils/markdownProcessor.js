@@ -362,7 +362,7 @@ function processInlineFormatting(requests, text, startIndex) {
     // NOTE: To render correctly (just "text" as a link), you would need to
     // insert the 'linkText' part separately and apply the link style to that,
     // while skipping the insertion of the '[', ']', '(', ')', and 'linkUrl' parts.
-    // This requires parsing the line into segments before insertion.
+    // This requires parsing the line into segments before insertion. ss
   }
 
   // NOTE: This function does not handle other inline formatting like

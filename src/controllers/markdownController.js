@@ -35,7 +35,7 @@ exports.convertMarkdownToGoogleDoc = async (req, res) => {
     // Extract token
     const accessToken = authHeader.replace('Bearer ', '');
     
-    // Create credentials object
+    // Create credentials object 
     const credentials = {
       access_token: accessToken,
       token_type: 'Bearer'
