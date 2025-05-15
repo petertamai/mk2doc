@@ -1,6 +1,6 @@
 // File: src/controllers/markdownController.js
 
-const { processMarkdown } = require('../utils/markdownProcessor');
+const { processMarkdown } = require('../utils/markdownProcessor'); // This will now use the showdown-integrated version
 const { createGoogleDoc } = require('../services/googleDocsService');
 const logger = require('../utils/logger');
 
@@ -35,7 +35,7 @@ exports.convertMarkdownToGoogleDoc = async (req, res) => {
     // Extract token
     const accessToken = authHeader.replace('Bearer ', '');
     
-    // Create credentials object 
+    // Create credentials object
     const credentials = {
       access_token: accessToken,
       token_type: 'Bearer'
